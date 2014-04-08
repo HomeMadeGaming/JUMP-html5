@@ -1,26 +1,21 @@
-body {
+body{
 	background-color: #DDDDDD;
 }
 
-#header
-{
+#header{
 	text-align: center;
 }
-canvas
-{
+canvas{
 	border: 2px solid #CCCCCC;
 }
-#content
-{
+#content{
 	display:inline-block;
 }
-#instruction
-{
+#instruction{
 	float: right;
 	width:250px;
 }
-div
-{
+div{
 	margin: 5px;
 	padding: 5px;
 	border: 2px solid #CCCCCC;

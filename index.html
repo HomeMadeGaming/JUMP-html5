@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+	
 	<head>
 		<meta charset="utf-8">
-
 		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,7 +10,6 @@
 		<title>Jump</title>
 		<meta name="description" content="A back to basics platformer">
 		<meta name="author" content="HMG">
-
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
@@ -20,22 +19,18 @@
 	</head>
 
 	<body>
+		
 			<div id="header">
 				<h1>Jump</h1>
 			</div>
 			
-
 			<div id="content">
-				<canvas id="canvas">
-					Your Browser does not support this game.
-				</canvas>
+				<canvas id="canvas">Your browser does not support this game.</canvas>
 			</div>
+			
 			<div id="instruction">
-				<p>
-					Control the jumper using the wasd keys. Navigate through the maze and find the treasure!
-				</p>
-				<p>
-					Controls: <br>
+				<p>Control the jumper using the arrow keys. Navigate through the maze and find the treasure!</p>
+				<p>Controls: <br>
 					Enter: Start play. <br>
 					P: Pause <br>
 					Arrows keys: Move left and right <br>
@@ -44,43 +39,21 @@
 			</div>
 
 			<footer>
-				<p>
-					&copy; Copyright by Vance
-				</p>
+				<p>&copy; Copyright by Vance</p>
 			</footer>
-			<!--
-				Audio Src
-			-->
+			
+			<!--Audio Src-->
 			<audio preload="true" id="jump">
-				<source src="Jump.wav">
-					
-				</source>
-
-				<source src="jump.mp3">
-					
-				</source>
-
+				<source src="Jump.wav"> </source>
+				<source src="Jump.mp3">	</source>
 			</audio>
 			
-			<!--
-				*****Run the followin javascript after the canvas element has been created*****
-				-->
-			
-			<script src="jump.js">
-				
-			</script>
-			<script src="keyboard.js">
-				
-			</script>		
-			<script src="leveldesign.js">
-				
-			</script>
-			<script src="playerdesign.js">
-				
-			</script>
-			<script src="gamephysics.js">
-				
-			</script>
+			<!--*****Run the following javascript after the canvas element has been created*****-->	
+			<script src="jump.js"> </script>
+			<script src="keyboard.js"> </script>		
+			<script src="leveldesign.js"> </script>
+			<script src="playerdesign.js"> </script>
+			<script src="gamephysics.js"> </script>
 			
 	</body>
 </html>
