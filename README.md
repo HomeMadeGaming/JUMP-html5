@@ -7,6 +7,19 @@ The goal of the game is to venture through the expansive map and locate all of t
 Control 
 
 -----------------------------------
+v. 0.1.1[04/10/14]
+Prevent player from walking infinitely off the horizon.
+Added map for debugging purposes.
+Replaced if-then statements for key press and key release with switches.
+Made the jump button a boolean instead of an integer.
+Made changing from one map to another smoother.
+Replaced the if-then statement in loadMap() with switches.
+
+Issues: still missing some maps.
+still missing some gold and silver to collect.
+still missing some traps.
+
+
 v. 0.1.0
 Added level design engine
 	Levels can be designed by assigning an array to the floor object. Number between 1 and 100 represent platform height on the screen.

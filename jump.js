@@ -45,6 +45,7 @@ function tick(){			//Tick: What occurs during each game tick
 	}
 	
 	ctx.fillText ("Game Mode: " + game.mode, 10, 30); //Displays game mode for debugging purposes.
+	ctx.fillText ("Map" + map.x + "and" + map.y, 10, 40); //Display map for debugging purposes.
 }
 
 var animFrame = window.requestAnimationFrame || 	//sets up animation frame, an alternative to setInterval
