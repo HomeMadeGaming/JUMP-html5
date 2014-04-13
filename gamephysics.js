@@ -4,9 +4,16 @@
 
 //THE PHYSICS ENGINE
 player.physics = function(){		//PLAYER GRAVITY AND MECHANICS
+		game.track.play();			//play music
 		if (this.vy < -4.5){		//Terminal Velocity
 			this.vy = -4.5;
 		}
+		
+		if (key.p === true)
+		{
+			game.mode = 2;
+		}
+		
 		if (this.planted > 0 && key.d === true){		//Jump only when feet are "planted" to the ground
 			this.vy = 3.2;
 			jump.pause();

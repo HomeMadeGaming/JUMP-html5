@@ -11,6 +11,10 @@ var key = {
 	d:false,
 	left:0,
 	right:0,
+	up: 0,
+	down: 0,
+	enter: false,
+	p: false,
 };
 
 window.onkeydown = function(e){			//listen for key press
@@ -25,16 +29,24 @@ window.onkeydown = function(e){			//listen for key press
 		key.left = 1;
 		break;
 		
+		case 38:
+		key.up = 1;
+		break;
+		
 		case 39:
 		key.right = 1;
 		break;
 		
+		case 40:
+		key.down = 1;
+		break;
+		
 		case 13://START
-		game.mode = 1;
+		key.enter = true;
 		break;
 		
 		case 80://PAUSE
-		game.mode = 2;
+		key.p = true;
 		break;
 	}
 };
@@ -52,8 +64,24 @@ window.onkeyup = function(e){ 			//listen for key release
 		key.left = 0;
 		break;
 		
+		case 38:
+		key.up = 0;
+		break;
+		
 		case 39:
 		key.right = 0;
+		break;
+		
+		case 40:
+		key.down = 0;
+		break;
+		
+		case 13://START
+		key.enter = false;
+		break;
+		
+		case 80://PAUSE
+		key.p = false;
 		break;
 	}
 };
